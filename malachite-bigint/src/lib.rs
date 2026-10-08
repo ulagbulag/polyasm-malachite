@@ -55,6 +55,7 @@
     clippy::use_self,
     clippy::trivially_copy_pass_by_ref
 )]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 extern crate alloc;
 
